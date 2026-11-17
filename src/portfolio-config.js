@@ -1,4 +1,4 @@
-// WorkBuddy 主要编辑本文件：每增加一个分类，三个场景自动增加一个动物入口。
+// WorkBuddy 主要编辑本文件：每增加一个分类，四个场景自动增加一个动物入口。
 export const profile = {
  name: 'Jason 的创作岛', subtitle: 'JASON LIU · 文创设计与 AI 创作',
  byline: '刘哲赏 Jason · 作品与实践',
