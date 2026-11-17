@@ -76,6 +76,12 @@ await cp(path.join(root,'skills/creative-island-portfolio/SKILL.md'),path.join(s
 await cp(source,path.join(skill,'assets/template'),{recursive:true});
 await rm(path.join(skill,'assets/template/dist'),{recursive:true,force:true});
 
+// The GitHub root is directly readable as a skill from a single repository URL.
+await cp(path.join(skill,'SKILL.md'),path.join(root,'SKILL.md'));
+await rm(path.join(root,'assets/template'),{recursive:true,force:true});
+await mkdir(path.join(root,'assets'),{recursive:true});
+await cp(path.join(skill,'assets/template'),path.join(root,'assets/template'),{recursive:true});
+
 const zip=path.join(downloads,'creative-island-portfolio-workbuddy.zip');
 await rm(zip,{force:true});
 execFileSync('zip',['-qr',zip,path.basename(skill)],{cwd:out});
