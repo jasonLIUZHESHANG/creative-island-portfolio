@@ -20,7 +20,7 @@ await cp(path.join(root,'docs/TEMPLATE_README.md'),path.join(source,'README.md')
 await writeFile(path.join(source,'src/portfolio-config.js'),`// WorkBuddy 主要编辑本文件：每增加一个分类，四个场景自动增加一个动物入口。
 export const profile={
  name:'我的创作岛', subtitle:'把经历，放进风景里', byline:'我的互动作品集',
- footer:'我的作品集', url:'', attribution:'示例内容，请替换为自己的真实作品。', defaultScene:3
+ footer:'我的作品集', url:'', attribution:'示例内容，请替换为自己的真实作品。', defaultScene:0, socialLinks:[]
 };
 export const portfolioSections=[
  {short:'创作作品',title:'我的创作作品',intro:'示例分类，请替换为你的真实经历。',items:[['作品示例（请替换）','写下你的角色、过程和成果。']]},
@@ -60,7 +60,7 @@ html=html.replaceAll('Jason 的创作岛','我的创作岛')
  .replaceAll('刘哲赏 Jason · 文创设计师 · AI 创作实践者','我的作品集')
  .replaceAll('https://runcrafts.com/portfolio/#works','#')
  .replaceAll('项目名称与归属来自 Jason 的公开作品集','示例内容，请替换为真实作品')
- .replace('>风栖草原</h1>','>云朵花语</h1>');
+ .replace('>云朵花语</h1>','>风栖草原</h1>');
 await writeFile(path.join(source,'index.html'),html);
 const pkg=JSON.parse(await readFile(path.join(source,'package.json'),'utf8'));
 pkg.name='creative-island-portfolio';

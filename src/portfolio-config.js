@@ -4,8 +4,12 @@ export const profile = {
  byline: '刘哲赏 Jason · 作品与实践',
  footer: '刘哲赏 Jason · 文创设计师 · AI 创作实践者',
  url: 'https://runcrafts.com/portfolio/#works',
+ socialLinks: [
+  {label: 'X', url: 'https://x.com/JasonAIJourney'},
+  {label: '小红书', url: 'https://xhslink.cn/o/3zJlo1zfgd3'}
+ ],
  attribution: '项目名称与归属来自 Jason 的公开作品集',
- defaultScene: 3
+ defaultScene: 0
 };
 export const portfolioSections = [
  {short:'文创设计', title:'从文化灵感，到日常作品', intro:'文化产品设计与 AI 视觉探索。', items:[['花·旦','文创作品 · 戏曲主题'],['车仔茶包','文创设计 · 茶文化'],['妈祖 · 千年守望','文化产品 · 数字体验'],['岭南荔枝胸针','润葭团队作品 · 文创产品'],['云萝植物园明信片','润葭团队作品 · 文旅文创'],['高校定制文创','润葭团队作品 · 定制文创']]},

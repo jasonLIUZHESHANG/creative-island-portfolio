@@ -76,3 +76,10 @@ body[data-scene="3"] .sheep-label[hidden]{display:none}
 .portfolio-cover{width:74px;height:74px;min-height:74px}
 .portfolio-cover img{width:100%;height:100%;min-height:0;object-fit:cover}
 @media(max-width:760px){.portfolio-cover{width:60px;height:60px;min-height:60px}.portfolio-cover img{min-height:0}}
+
+/* Social profiles remain reachable from every scene. */
+header .social-links{display:flex;gap:8px;flex-wrap:nowrap;margin:0 10px 0 auto;pointer-events:auto}
+header .social-links a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 12px;border:1px solid #b8c9b6;border-radius:18px;background:#fffdf5c9;color:#305d49;text-decoration:none;font-size:12px;font-weight:600;white-space:nowrap;backdrop-filter:blur(8px)}
+header .social-links a:hover{background:#fffdf5;color:#17422e}header .social-links a:focus-visible{outline:3px solid #b88944;outline-offset:2px}
+header .social-links[hidden]{display:none}
+@media(max-width:760px){header .social-links{gap:5px;margin-left:auto;margin-right:8px}header .social-links a{min-height:30px;padding:5px 8px;font-size:11px}.brand small{display:none}}
