@@ -6,7 +6,8 @@ export const profile = {
  url: 'https://runcrafts.com/portfolio/#works',
  socialLinks: [
   {label: 'X', url: 'https://x.com/JasonAIJourney'},
-  {label: '小红书', url: 'https://xhslink.cn/o/3zJlo1zfgd3'}
+  {label: '小红书', url: 'https://xhslink.cn/o/3zJlo1zfgd3'},
+  {label: 'YouTube', url: 'https://www.youtube.com/@StillnessWithinAudio'}
  ],
  attribution: '项目名称与归属来自 Jason 的公开作品集',
  defaultScene: 0
